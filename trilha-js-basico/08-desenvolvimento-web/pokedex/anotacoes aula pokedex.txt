@@ -1,0 +1,49 @@
+*COMENTARIO NO HTML: <!-- comentario aqui -->
+
+*"http-server" precisa ser instalando para quando for o primeiro uso do vs code na máquina.
+para instala-lo basta digitar no terminal "npm install -g http-server" e enter.
+
+*digitar dentro do arquivo html e selecionar a opção "html 5", ele já vai vir pronto para uso.
+
+*atalho no terminal para criar novo arquivo dentro da pasta aberta no vs code "touch index.html"
+    para abrir o arquivo pelo teclado CTRL+P e seleciona o arquivo no campo da pesquisa.
+
+*Abrindo a pagina na web:
+    se abrirmos direto da pasta, o arquivo abre na internet. porém, como toda página fica armazenada em um
+servidor http-server é preciso realizar o seguinte comando para simularmos nossa página em um servidor:
+    "http-server ./" no final haverá uns endereços IP e o que começa com 127 é o endereço do site.
+
+DAQUI PRA CIMA foi feito a configuração de preparação do ambiente. Primeiros passos.
+
+<style>
+        h1 {
+            color: red;
+        }
+    </style>
+:Tudo que esta dentro desta tag é relacionado ao CSS.
+
+*<button type="button">
+    Teste
+</button>
+:Para adicionar botão ao site.
+
+*DISABLE CACHE: em inspecionar na web, na aba NETWORK é importante flegar esta opção para que ao testar o site não seja
+carregamento do cache salvo. Assim daria a sensação de sucesso e não apresentaria falhas.
+
+*NORMALIZE: é um CSS que padroniza os parâmetros de texto em qualquer web seja chrome, firefox, edge.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+o código acima seria a última versão até o momento 8.0.1
+este código é posto dentro do head
+
+*ORGANIZAÇÃO: é criado uma pasta para cada item CSS, JS, HTML. Assim fica tudo organizado e dentro do corpo html não 
+fica extenso deixando somente referencia das pastas.
+    <link rel="styleesheet" href="/assets/CSS/global.css"> // editável dentro deste código foi a localização do css
+que é o "/assets/CSS/global.css". Ele fica dentro da <head></head>.
+    <script src="/assets/JS/main.js"></script> é para localização da pasta do JS.
+
+
+
+
+
+
+

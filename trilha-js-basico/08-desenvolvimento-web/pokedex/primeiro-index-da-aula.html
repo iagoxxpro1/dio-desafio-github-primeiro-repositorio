@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Meu primeiro site</h1>
+    <p>Meu primeiro site está sendo feito junto de um curso da DIO</p>
+    <button id="btnTeste" type="button">
+        Teste
+    </button>
+
+    <script>
+
+        const btnTeste = document.getElementById("btnTeste")
+//"document.getElementById" serve para puxar algum item dentro do nosso html. Para isso foi posto um "id="nomeAqui"" identificador no item que queremos puxar, no caso escolhemos btnTeste.
+        btnTeste.addEventListener("click", function () {
+//"addEventListener" serve para chamar algum evento ao clicarem no botão, neste caso ele vai nos trazer a msg "clicou no botão!".
+            console.log('clicou no botão!')
+        })
+
+    </script>
+
+</body>
+
+</html>
