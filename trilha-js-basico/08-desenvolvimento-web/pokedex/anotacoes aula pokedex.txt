@@ -41,9 +41,13 @@ fica extenso deixando somente referencia das pastas.
 que é o "/assets/CSS/global.css". Ele fica dentro da <head></head>.
     <script src="/assets/JS/main.js"></script> é para localização da pasta do JS.
 
+*<section></section> serve para criar uma lista, nosso exemplo é de pokemon.
 
+*1rem: sempre que houver algo assim, é porque 1 rem é uma medida relativa responsiva.
+pois, se colocar tamanhos específicos como 16px por exemplo, sempre será este tamanho. ele não vai ficar de acordo com o aparelho.
 
-
-
+*    display: grid;
+    grid-template-columns: 1fr 1fr
+estes codigos acima servem para separar uma lista em duas colunas.
 
 
