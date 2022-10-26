@@ -1,0 +1,33 @@
+
+Para montar uma requisição HTTP
+primeiro temos a URL
+url:https://pokeapi.co/api/v2/pokemon (path)
+
+A URL é composta: ${IP}/${path = caminho de identificação do recurso}
+
+O IP que estamos apontando no endereço é o = https://pokeapi.co
+Na verdade esse é o domínio porque algum servidor fez a conversão do IP/domínio
+
+O path é o que vem depois do IP "https://pokeapi.co"
+: /api/v2/pokemon
+
+O que vem depois de path:
+    caso tenha um ponto de interrogação assim: https://pokeapi.co/api/v2/pokemonW?
+se chama QUERY STRING, ela começa após o ? a sua estrutura é "chave, valor" exemplo: type=grass&name=i
+ficando assim https://pokeapi.co/api/v2/pokemon?type=grass&name=i ou seja os nomes iniciados em identificação
+Esta é a syntaxe da query string.
+
+Request Method: GET | POST | PUT | DELETE
+
+Response Headers e Request  Headers o que significa esta área de dados:
+São área de dados que a gente pode transmitir coisas para o o servidor e receber coisas do servidor.
+Eles são metadados da nossa requisição, para descrever ou complementar a nossa requisição.
+    Request Headers:
+        configuração da api
+        autenticação das credenciais: authotization: Bearer
+    Response Headers:
+
+Resumo composição de uma requisição HTTP:
+Composição requisição: URL; Request Method; Request Headers
+
+o servidor processa a requisição e devolve: Status Code; Response Headers; Response Body.
