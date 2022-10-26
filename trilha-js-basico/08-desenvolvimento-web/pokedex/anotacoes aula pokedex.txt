@@ -41,7 +41,20 @@ fica extenso deixando somente referencia das pastas.
 que é o "/assets/CSS/global.css". Ele fica dentro da <head></head>.
     <script src="/assets/JS/main.js"></script> é para localização da pasta do JS.
 
-*<section></section> serve para criar uma lista, nosso exemplo é de pokemon.
+*<section></section> serve para criar uma lista, nosso exemplo é de pokemon. montamos toda uma estrutura dentro do section
+para demonstrar nome,imagem,poderes.
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 1rem;
+}
+    este conjunto de código acima vai no arquivo CSS antes de começar as modificações visual do arquivo HTML.
+Tudo que vai abaixo deste conjunto de código é para mudar cores, letras, tamanho.
+Os códigos abaixo desse são puxados de acordo com os códigos que ficam dentro do <section></section> no arquivo HTML.
 
 *1rem: sempre que houver algo assim, é porque 1 rem é uma medida relativa responsiva.
 pois, se colocar tamanhos específicos como 16px por exemplo, sempre será este tamanho. ele não vai ficar de acordo com o aparelho.
