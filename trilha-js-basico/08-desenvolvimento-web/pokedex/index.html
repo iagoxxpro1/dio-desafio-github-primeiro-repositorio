@@ -20,17 +20,14 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/CSS/global.css">
     <link rel="stylesheet" href="/assets/CSS/pokedex.css">
-
 </head>
 
 <body>
-
     <section class="content">
         <!-- para dizer que haverá um conteúdo -->
         <h1>Pokedex</h1>
 
-        <ol class="pokemons">
-            <!-- para ordenar a lista a seguir -->
+        <ol id="pokemonList" class="pokemons"> <!-- para ordenar a lista a seguir -->
             <li class="pokemon">
                 <span class="number">#001</span>
                 <span class="name">Bulbasaur</span>
@@ -44,9 +41,14 @@
                         alt="Bulbasaur">
                 </div>
             </li>
+
+            <!-- Pokemons here -->
+        </ol>
     </section>
 
     <!-- Nosso JS -->
+    <script src="/assets/JS/pokemon-model.js"></script>
+    <script src="/assets/JS/poke-api.js"></script>
     <script src="/assets/JS/main.js"></script>
 </body>
 

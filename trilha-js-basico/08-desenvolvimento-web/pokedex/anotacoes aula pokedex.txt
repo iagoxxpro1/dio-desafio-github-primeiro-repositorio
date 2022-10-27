@@ -63,4 +63,24 @@ pois, se colocar tamanhos específicos como 16px por exemplo, sempre será este 
     grid-template-columns: 1fr 1fr
 estes codigos acima servem para separar uma lista em duas colunas.
 
+*
+const offset = 0;
+const limit = 10;
+const url = 'https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}'
+
+fetch(url)
+    .then(function (response) {
+        console.log(response)
+    })
+O fetch acima esta sendo utilizado para dar uma resposta positiva de que foi executado com sucesso.
+para isso o console.log(response).
+
+Em caso de fracasso utilizamos:
+    .catch(function (error) {
+        console.error
+    })
+Para saber que a operação independente de sucesso ou fracasso finalizou utiliza-se:
+.finally(function(){
+    console.log('Requisição concluída!')
+})
 
