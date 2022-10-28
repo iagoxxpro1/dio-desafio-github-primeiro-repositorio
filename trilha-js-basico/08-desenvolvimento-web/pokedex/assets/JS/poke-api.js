@@ -5,12 +5,22 @@ function converPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
+    pokemon.habilidades = 'Habil.:' /* ADICIONEI */
+    pokemon.tipo = 'Tipo:' /* ADICIONEI */
+    pokemon.altura='Altura:' /* ADICIONEI */
+    pokemon.height = pokeDetail.height /* ADICIONEI */
+    pokemon.peso='Peso:' /* ADICIONEI */
+    pokemon.weight=pokeDetail.weight /* ADICIONEI */
 
     const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
     const [type] = types
-
     pokemon.types = types
     pokemon.type = type
+
+    const abilities = pokeDetail.abilities.map((abilitiesAbility) => abilitiesAbility.ability.name) /* ADICIONEI */
+    const [ability] = abilities /* ADICIONEI */
+    pokemon.abilities = abilities /* ADICIONEI */
+    pokemon.ability = ability /* ADICIONEI */
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 

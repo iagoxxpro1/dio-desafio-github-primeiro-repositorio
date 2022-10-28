@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151
+const maxRecords = 15
 const limit = 10
 let offset = 0;
 
@@ -14,18 +14,27 @@ function loadPokemonItens(offset, limit) {
 
                 <div class="detail">
                     <ol class="types">
+                        <span class="Tipo" style="color:white;">${pokemon.tipo}</span>
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                    </ol>
+                        <span class="Habil" style="color:white;">${pokemon.habilidades}</span>
+                        ${pokemon.abilities.map((ability) => `<li class="ability ${ability}">${ability}</li>`).join('')}
+                        <span class="Altura" style="color:white;">${pokemon.altura}</span> <p style="margin:0;"></p>
+                        <span class="height">${pokemon.height}</span> <p style="margin:0;padding:2px;"></p>
+                        <span class="Peso" style="color:white;">${pokemon.peso}</span> <p style="margin:0;"></p>
+                        <span class="weight">${pokemon.weight}</span>
+
+                    </ol >
 
                     <img src="${pokemon.photo}"
                         alt="${pokemon.name}">
                 </div>
-            </li>
-        `).join('')
+            </li >
+    `).join('')
 
         pokemonList.innerHTML += newHtml
     })
 }
+/* Da linha 19 à x foi eu quem adicionei além do que foi passado em aula */
 
 loadPokemonItens(offset, limit)
 

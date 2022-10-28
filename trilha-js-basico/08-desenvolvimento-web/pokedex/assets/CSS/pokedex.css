@@ -79,6 +79,7 @@
 }
 
 .pokemon {
+    /* configuração específica dos pokemons */
     display: flex;
     flex-direction: column;
     margin: .5rem;
@@ -162,4 +163,48 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+
+/* Daqui pra baixo são adições feitas fora de aula */
+
+.pokemon .ability {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.ability {
+    background-color: #00000054;
+}
+
+.pokemon .height {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.height {
+    background-color: #00000054;
+}
+
+.pokemon .weight {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.weight {
+    background-color: #00000054;
 }
