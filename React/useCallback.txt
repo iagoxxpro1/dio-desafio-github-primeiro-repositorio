@@ -1,0 +1,45 @@
+Parecido com o useMemo o useCallback memoriza a função.
+useMemo = referencia em variaveis(const, var let)
+useCallback = referencia de função.
+
+index.jsx
+
+import { useState, useEffect, useMemo, useCallback} from 'react';
+
+const Teste = () => {
+
+	const [age, setAge] = useState(29);
+	const [name, setName] = useState('Iago');
+
+const handleChangeAge = useCallback (() => {
+	const newAge = 10 * age;
+	console.log ('age atual', age, newAge)
+	setAge(26)
+}, [age])
+
+const handleChangeName = useCallback (() => {
+	console.log('alterou nome')
+	setName('Jennifer')	
+}, [])
+
+return (
+	<div>
+		<p>
+			Idade: {age}
+		</p>
+		<br />
+		<p>
+			Nome: {name}
+		</p><br />
+		<button onClick={handleChangeName}>Alterar nome</button>
+		<br />
+		<button onClick={handleChangeAge}>Alterar idade</button>
+	</div>
+	)
+}
+
+export { Teste };
+
+no arquivo APP.JS precisa adicionar o seguinte código para o código acima ser adicionado a 
+home:
+<Route path="/Teste" element={<Teste />} />

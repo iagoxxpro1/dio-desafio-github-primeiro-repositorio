@@ -1,0 +1,29 @@
+useState é utilizado para quando queremos uma mudança de estado, no exemplo abaixo foi criado
+um botão com o nome Iago, quando feito o click no botão á uma mudança de estado para o nome
+Jennifer. Resumindo o useState armazena um Status e altera o status no decorrer da aplicação.
+
+index.jsx
+
+import { useState} from 'react';
+
+const Teste = () => {
+	const [name, setName] = useState('Iago');
+
+const handleChangeName = () => {
+	setName('Jennifer')
+}
+return (
+	<div>
+		<p>
+			{name}
+		</p>
+		<button onClick={handleChangeName}>Alterar</button>
+	</div>
+	)
+}
+
+export { Teste };
+
+no arquivo APP.JS precisa adicionar o seguinte código para o código acima ser adicionado a 
+home:
+<Route path="/Teste" element={<Teste />} />

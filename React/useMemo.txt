@@ -1,0 +1,38 @@
+useMemo é utilizado para memorizar o resultado de uma função e economizar a repetição do processamento
+não precisando ficar fazendo um mesmo cálculo por exemplo. Muito utilizado para quando se 
+esta trabalhando em um projeto grande e precisa pensar em performance e renderização de 
+componentes.
+
+index.jsx
+
+import { useState, useEffect, useMemo} from 'react';
+
+const Teste = () => {
+	const [age, setAge] = useState(29);
+
+const handleChangeAge = () => {
+	setAge(26)
+}
+
+const calculo = useMemo(() => {
+	console.log('calculou', age)
+	return 10*age;
+}, [age]);
+
+	console.log('renderizou', calculo);
+
+return (
+	<div>
+		<p>
+			Idade: {age}
+		</p>
+		<button onClick={handleChangeAge}>Alterar</button>
+	</div>
+	)
+}
+
+export { Teste };
+
+no arquivo APP.JS precisa adicionar o seguinte código para o código acima ser adicionado a 
+home:
+<Route path="/Teste" element={<Teste />} />

@@ -1,0 +1,35 @@
+useEffect nos traz uma mensagem parecendo um pop-up quando tal função na qual ele esteja dentro
+é executada. No exemplo abaixo quando clicado no botão ALTERAR que muda o nome de Iago para
+Jennifer, o useEffect é ativado com um pop-up escrito RENDERIZEI.
+Ele gerencia o ciclo de vida de um componente.
+
+index.jsx
+
+import { useState, useEffect } from 'react';
+
+const Teste = () => {
+	const [name, setName] = useState('Iago');
+
+const handleChangeName = () => {
+	setName('Jennifer')
+}
+
+useEffect(() => {
+	alert('renderizei')
+},[]);
+
+return (
+	<div>
+		<p>
+			{name}
+		</p>
+		<button onClick={handleChangeName}>Alterar</button>
+	</div>
+	)
+}
+
+export { Teste };
+
+no arquivo APP.JS precisa adicionar o seguinte código para o código acima ser adicionado a 
+home:
+<Route path="/Teste" element={<Teste />} />
