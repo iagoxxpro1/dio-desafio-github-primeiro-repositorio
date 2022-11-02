@@ -47,6 +47,13 @@ export const UserInfo = styled.div`
     }
 `
 
+export const UserPicture = styled.img`
+    width: 32px;
+    height: 32px;
+    border-radius: 22px;
+    border: 3px solid #ffffff;
+`
+
 export const PostInfo = styled.div`
 
     margin-bottom: 12px;
