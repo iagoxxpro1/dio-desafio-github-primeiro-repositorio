@@ -1,0 +1,15 @@
+Para converter um JS em TypeScript primeiramente precisa ter instalado o seguinte código:
+-> yarn add typescript @types/node @types/react @types/react-dom @types/jest -D
+
+Para iniciar o Typescript precisa digitar o seguinte código no terminal:
+-> npx tsc --init
+
+O styled-components é essencial no projeto JS, e na hora de converter para TS caso não tenha 
+o código abaixo instalado na máquina, vai dar erro na execução:
+-> yarn add @types/styled-components -D
+
+O TS não reconhece a extensão .png então para não ficar com uma linha vermelha de erro embaixo,
+nós criamos dentro de src uma pasta chamada @types e criamos um arquivo chamado image.d.ts.
+	Neste arquivo escreve o seguinte código para enganar o TS e dizer que toda extensão .png 
+é válido:
+-> declare module "*.png"
