@@ -1,0 +1,20 @@
+Projeto: Criar tela de cadastro.
+
+Ela possui:
+cabeçalho: logo dio, word.home, word.entrar e word.cadastrar
+texto: na esquerda "A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas."
+titulo: na direita "comece agora grátis
+subtitulo: na direita "Crie sua conta e make the change
+parte do cadastro:
+	Nome completo
+	E-mail
+	Password
+botão: Criar minha conta
+texto: embaixo do botão "Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.
+texto: embaixo da frase acima "já tenho conta. Fazer login"(verde)
+
+Clone no Git:
+https://github.com/digitalinnovationone/trilha-react-desafio-3
+
+Clone no Figma:
+https://www.figma.com/file/fvjQQNtqaUdpuNixvCZVav/DIO-CLONE?node-id=0%3A1
