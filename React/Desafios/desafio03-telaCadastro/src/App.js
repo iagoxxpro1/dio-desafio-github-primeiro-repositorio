@@ -4,13 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 
-import { Home } from "./pages/home"
+import { HomeCadastro } from "./pages/HomeCadastro"
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeCadastro />} />
       </Routes>
     </Router>
   );

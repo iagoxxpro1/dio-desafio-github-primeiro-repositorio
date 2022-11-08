@@ -59,6 +59,7 @@ export const Menu = styled.a`
 export const MenuRight = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 25px;
     color: #ffffff;
