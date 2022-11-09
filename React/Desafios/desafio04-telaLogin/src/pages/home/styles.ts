@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const Container = styled.div`
     width: 100%; 
     height: 100vh;
@@ -49,3 +47,38 @@ export const Spacing = styled.div`
     margin: 10px 0;
 `
 
+export const ButtonContainer = styled.button`
+    width: 185%;
+    height: 42px;
+    background-color: #81259D;
+    color: #FFF;
+
+    border: 1px solid #81259D;
+    border-radius: 21px;
+
+    &:hover {
+        opacity: 0.6;
+        cursor:pointer;
+    }
+`
+
+export const InputContainer = styled.div`
+    width: 185%;
+    height: 42px;
+    color: #FFF;
+
+    border: 1px solid #81259D;
+    border-radius: 21px;
+    overflow: hidden;
+    padding: 0 10px;
+    
+    & input {
+        width: 100%;
+        height: 42px;
+        border-radius: 21px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+    }
+
+`
