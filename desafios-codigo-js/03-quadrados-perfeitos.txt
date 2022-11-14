@@ -1,0 +1,11 @@
+O código acima determina o número mínimo de quadrados que podem ser somados para dar o número N.
+
+Primeiro, criamos um vetor chamado "dp" que armazena o quadrado de cada número até N.
+
+Em seguida, começamos a percorrer o vetor "dp" de trás para a frente.
+
+Para cada número no vetor, calculamos o número de quadrados que podem ser somados para dar esse número.
+
+Se o número de quadrados for menor que o número mínimo de quadrados calculado até agora, atualizamos o número mínimo.
+
+No final, o número mínimo de quadrados que podem ser somados para dar o número N será impresso.

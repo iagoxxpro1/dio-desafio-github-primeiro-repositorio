@@ -1,0 +1,17 @@
+const letras = entrada.split('').reverse().join('')
+
+
+
+O código acima está separando as letras da string "entrada", invertendo a ordem delas e, por fim, juntando-as novamente em uma string.
+
+if(entrada === letras){
+
+O if está comparando a string "entrada" com a string "letras" (que tem as letras da string "entrada" invertidas). Se as duas strings forem iguais, significará que a string "entrada" é um palíndromo.
+
+return "TRUE"
+
+Neste caso, o if está retornando a string "TRUE", caso a string "entrada" seja um palíndromo.
+
+} else {
+
+Caso a string "entrada" não seja um palíndromo, o else retornará a string "FALSE".

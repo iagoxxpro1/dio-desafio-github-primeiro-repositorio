@@ -1,0 +1,19 @@
+O código acima é um algoritmo que calcula o valor total de uma determinada sequência. 
+
+Primeiramente, o algoritmo verifica se a sequência tem um tamanho de 2 ou menos. Se for o caso, ele imprime o valor total da sequência. 
+
+Em seguida, o algoritmo cria uma variável chamada "i" e atribui o valor da sequência à variável. Ele também cria uma variável chamada "arr" e atribui o valor da sequência à variável. Além disso, cria uma variável chamada "total" e atribui o valor 0 à variável. 
+
+Em seguida, o algoritmo itera sobre a variável "i" e, a cada iteração, decrementa o valor da variável em 1. 
+
+Quando o valor da variável "i" chegar a 0, o algoritmo para de iterar. 
+
+Em seguida, o algoritmo cria uma variável chamada "array" e atribui o valor da variável "arr" à variável. 
+
+Em seguida, o algoritmo cria uma variável chamada "a" e atribui o valor do tamanho do array à variável. 
+
+Em seguida, o algoritmo itera sobre a variável "array" e, a cada iteração, calcula o valor total da sequência. 
+
+Quando o valor da variável "array" chegar a 0, o algoritmo para de iterar. 
+
+Finalmente, o algoritmo imprime o valor total da sequência.
