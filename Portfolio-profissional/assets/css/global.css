@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+.main {
+  padding: 1rem;
+  /* rem é medida para deixar flexível. 1rem fixa armoniosio e mobile */
+}
+@font-face {
+  font-family: "Neue Machina";
+  src: url("/Portfolio-profissional/assets/fonts/neue-machina-regular.otf");
+  /* declarando uma font baixada */
+}

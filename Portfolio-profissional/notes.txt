@@ -1,0 +1,8 @@
+1 - add normalize.css ao html devido as diferenças de browsers:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+2 - npm install http-server -g: rodou este código porque fica melhor para visualizar como esta ficando o trabalho. Porque somente usar o "live server" pode não apresentar algumas falhas.
+depois roda "http-server ./"
+
+3 - site: https://tinypng.com/
+esse site é para fazer uma limpa na imagem e diminuir o tamanho para ficar mais leve.
