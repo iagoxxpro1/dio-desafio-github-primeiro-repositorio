@@ -2,16 +2,24 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
 body {
   background-color: #000;
   color: #fff;
 }
+
 .main {
   padding: 1rem;
-  /* rem é medida para deixar flexível. 1rem fixa armoniosio e mobile */
+  border: 1px solid #fff;
+  margin: 1rem;
+  /* rem é uma medida flexível. 1rem fixa de forma harmoniosa em dispositivos móveis */
+  border-radius: 1rem;
 }
+
 @font-face {
   font-family: "Neue Machina";
-  src: url("/Portfolio-profissional/assets/fonts/neue-machina-regular.otf");
-  /* declarando uma font baixada */
+  src: url("../fonts/neue-machina-regular.otf") format("opentype");
+  /* declarando uma fonte baixada */
+  font-weight: normal;
+  font-style: normal;
 }
