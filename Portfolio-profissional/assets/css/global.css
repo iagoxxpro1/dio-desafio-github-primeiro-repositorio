@@ -8,6 +8,16 @@ body {
   color: #fff;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .main {
   padding: 1rem;
   border: 1px solid #fff;
