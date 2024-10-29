@@ -4,12 +4,14 @@
   /* permite que os items fique um embaixo do outro como textos por exemplo */
   align-items: center;
   /* quando usar flex-direction para centralizar precisa usar o align-item mais se não seria justify-content */
+  text-align: center;
 }
-.header .photo-perfil {
+.header .photo {
   max-width: 200px;
   height: auto;
   border-radius: 50%;
   /* para arredondar a foto */
+  margin: 0 auto;
 }
 .header .title {
   text-align: center;
@@ -55,4 +57,26 @@
 
 .information .phone::before {
   background-image: url("../img/icons/phone.svg");
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+  }
+
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 210px;
+  }
+  .header .information {
+    grid-area: information;
+  }
 }
