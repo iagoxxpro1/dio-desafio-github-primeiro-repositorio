@@ -40,11 +40,7 @@
       "Organização"
     ]
   },
-  "languages": [
-    "Português BR (fluent)",
-    "Inglês (intermediate)",
-    "Espanhol (beginner)"
-  ],
+  "languages": ["Portuguese BR (fluent)", "English (B2)", "Spanish (A1)"],
   "portfolio": [
     {
       "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
